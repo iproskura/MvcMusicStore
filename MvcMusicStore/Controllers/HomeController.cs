@@ -15,8 +15,8 @@ namespace MvcMusicStore.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = "I love cake!";
+            
             return View();
         }
 
@@ -26,5 +26,13 @@ namespace MvcMusicStore.Controllers
 
             return View();
         }
+
+        public ActionResult List()
+        {
+            //var albums = new List<Album>;
+
+            
+
+        };
     }
 }
