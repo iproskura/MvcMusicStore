@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
 {
@@ -27,12 +28,18 @@ namespace MvcMusicStore.Controllers
             return View();
         }
 
-        public ActionResult List()
+        public string List()
         {
-            //var albums = new List<Album>;
+            var albums = new List<Album>();
 
-            
+            string msg = "yay";
 
-        };
+            return msg;
+        }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
     }
 }
